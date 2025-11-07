@@ -63,9 +63,10 @@ export default function RemindersList() {
 
           <p className="text-gray-400 text-sm mb-2">
             ⏰{" "}
-            {new Date(reminder.reminderDate).toLocaleString(undefined, {
+            {new Date(reminder.reminderDate).toLocaleString("en-IN", {
               dateStyle: "medium",
               timeStyle: "short",
+              timeZone: "Asia/Kolkata",
             })}
           </p>
 
